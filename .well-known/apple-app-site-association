@@ -1,0 +1,13 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "83TB42W5AV.com.hermiteer.Rumblemunk.DJ",
+                "paths": [
+                    "/oauth-callback"
+                ]
+            }
+        ]
+    }
+}
