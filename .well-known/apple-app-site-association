@@ -5,7 +5,7 @@
             {
                 "appID": "83TB42W5AV.com.hermiteer.Rumblemunk.DJ",
                 "paths": [
-                    "/oauth-callback"
+                    "/rumblemunk/oauth-callback"
                 ]
             }
         ]
