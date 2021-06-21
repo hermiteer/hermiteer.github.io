@@ -5,7 +5,7 @@
         const params = new URLSearchParams(window.location.search)
         const code = params.get("code")
         const scope = params.get("scope")
-        const url = "rumblemunk://oauth-callback?code=${code}&scope=${scope}"
+        const url = "rumblemunk://oauth-callback?code=" + code + "&scope=" + scope
         window.location.assign(url)
         console.log('DOM fully loaded and parsed');
       });
