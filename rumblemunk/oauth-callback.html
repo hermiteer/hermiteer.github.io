@@ -3,6 +3,9 @@
     <script type="text/javascript">
       window.addEventListener('DOMContentLoaded', (event) => {
         console.log('DOM fully loaded and parsed');
+        const params = document.location.searchParams
+        const code = params.get('code')
+        console.log(params)
       });
     </script>
   </head>
