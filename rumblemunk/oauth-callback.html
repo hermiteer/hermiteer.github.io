@@ -2,7 +2,7 @@
   <head>
     <script type="text/javascript">
       window.addEventListener('DOMContentLoaded', (event) => {
-        const params = window.location.search
+        const params = new URLSearchParams(window.location.search)
         const code = params.get("code")
         const scope = params.get("scope")
         const url = "rumblemunk://oauth-callback?code=${code}&scope=${scope}"
