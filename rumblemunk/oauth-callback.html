@@ -2,7 +2,7 @@
   <head>
     <script type="text/javascript">
       window.addEventListener('DOMContentLoaded', (event) => {
-        const params = window.location.searchParams
+        const params = window.location.url.searchParams
         const code = params.get('code')
         const scope = params.get('scope')
 //         console.log('DOM fully loaded and parsed');
