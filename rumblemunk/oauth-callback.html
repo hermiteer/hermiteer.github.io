@@ -5,6 +5,7 @@
         const params = window.location.searchParams
         const code = params.get('code')
         console.log('DOM fully loaded and parsed');
+        window.location.assign('rumblemunk://oauth-callback')
       });
     </script>
   </head>
