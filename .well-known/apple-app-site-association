@@ -3,13 +3,12 @@
         "apps": [],
         "details": [
             {
-                "appIDs": [
-                    "83TB42W5AV.com.hermiteer.Rumblemunk.DJ",
-                    "83TB42W5AV.com.hermiteer.RMLBMNK2"
-                ],
-                "paths": [
-                    "/rumblemunk/oauth-callback"
-                ]
+                "appID": "83TB42W5AV.com.hermiteer.Rumblemunk.DJ",
+                "paths": [ "/rumblemunk/oauth-callback" ]
+            },
+            {
+                "appID": ""83TB42W5AV.com.hermiteer.RMLBMNK2",
+                "paths": [ "/rumblemunk/oauth-callback" ]
             }
         ]
     }
