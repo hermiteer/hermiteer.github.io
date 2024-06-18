@@ -9,7 +9,7 @@
                 ],
                 "components": [
                     {
-                        "/": "/rumblemunk/oauth-callback/*",
+                        "/": "/rumblemunk/oauth-callback",
                         "comment": "Redirect URI for Twitch OAuth sign in"
                     }
                 ]
