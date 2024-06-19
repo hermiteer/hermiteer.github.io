@@ -7,7 +7,8 @@
         const scope = params.get("scope")
         const state = params.get("state")
         const url = "RMBLMNK2://oauth-callback?code=" + code + "&scope=" + scope + "&state=" + state
-        window.location.assign(url)
+        // window.location.assign(url)
+        window.location.href = url
       });
     </script>
   </head>
