@@ -8,7 +8,7 @@
                 ],
                 "components": [
                     {
-                        "/": "/rmblmnk2/oauth-callback",
+                        "/": "/rmblmnk2/oauth-callback.html",
                         "comment": "Redirect URI for Twitch OAuth sign in"
                     }
                 ]
