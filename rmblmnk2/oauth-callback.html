@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      window.addEventListener('DOMContentLoaded', (event) => {
+        const params = new URLSearchParams(window.location.search)
+        const code = params.get("code")
+        const scope = params.get("scope")
+        const state = params.get("state")
+        const url = "rmblmnk2://oauth-callback?code=" + code + "&scope=" + scope + "&state=" + state
+        window.location.assign(url)
+      });
+    </script>
+  </head>
+  <body>
+    <center>
+      Redirecting back to app...
+    </center>
+  </body>
+</html>
