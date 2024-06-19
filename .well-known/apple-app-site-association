@@ -4,17 +4,6 @@
         "details": [
             {
                 "appIDs": [
-                    "83TB42W5AV.com.hermiteer.Rumblemunk.DJ"
-                ],
-                "components": [
-                    {
-                        "/": "/rumblemunk/oauth-callback",
-                        "comment": "Redirect URI for Twitch OAuth sign in"
-                    }
-                ]
-            },
-            {
-                "appIDs": [
                     "83TB42W5AV.com.hermiteer.RMBLMNK2"
                 ],
                 "components": [
