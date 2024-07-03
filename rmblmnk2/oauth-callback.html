@@ -15,7 +15,7 @@
                 //
                 var copyButton = document.getElementById("copy-button")
                 copyButton.addEventListener('click', function() {
-                    Navigator.clipboard.writeText(url)
+                    window.navigator.clipboard.writeText(url)
                 });
             });
         </script>
