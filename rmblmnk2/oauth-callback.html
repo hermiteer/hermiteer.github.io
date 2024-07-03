@@ -14,14 +14,9 @@
 
                 //
                 var copyButton = document.getElementById("copy-button")
-<!--                copyButton.onClick(() => copyChallengeCodeURL());-->
                 copyButton.addEventListener('click', function() {
-                    Navigation.clipboard.writeText(url)
+                    Navigator.clipboard.writeText(url)
                 });
-
-<!--                function copyChallengeCodeURL() {-->
-<!--                    Navigation.clipboard.writeText(url)-->
-<!--                }-->
             });
         </script>
     </head>
