@@ -1,23 +1,38 @@
 <html>
-  <head>
-    <script type="text/javascript">
-      window.addEventListener('DOMContentLoaded', (event) => {
-        const params = new URLSearchParams(window.location.search)
-        const code = params.get("code")
-        const scope = params.get("scope")
-        const state = params.get("state")
-        const url = "RMBLMNK2://oauth-callback?code=" + code + "&scope=" + scope + "&state=" + state
-        window.location.assign(url)
-        document.getElementById("url").innerHTML = url
-      });
-    </script>
-  </head>
-  <body>
-    <center>
-      <br>
-      Redirecting back to app...<br>
-      <br>
-      <span id="url"></span>
-    </center>
-  </body>
+    <head>
+        <script type="text/javascript">
+            window.addEventListener('DOMContentLoaded', (event) => {
+
+                // assemble params into url, then redirect
+                const params = new URLSearchParams(window.location.search)
+                const code = params.get("code")
+                const scope = params.get("scope")
+                const state = params.get("state")
+                const url = "RMBLMNK2://oauth-callback?code=" + code + "&scope=" + scope + "&state=" + state
+                document.getElementById("url").innerHTML = url
+                window.location.assign(url)
+
+                //
+                var copyButton = document.getElementById("copy-button")
+<!--                copyButton.onClick(() => copyChallengeCodeURL());-->
+                copyButton.addEventListener('click', function() {
+                    Navigation.clipboard.writeText(url)
+                });
+
+<!--                function copyChallengeCodeURL() {-->
+<!--                    Navigation.clipboard.writeText(url)-->
+<!--                }-->
+            });
+        </script>
+    </head>
+    <body>
+        <center>
+            <br>
+            Redirecting back to app...<br>
+            <br>
+            <span id="url"></span><br>
+            <br>
+            <input type="button" value="Copy challenge code URL" id="copy-button">
+        </center>
+    </body>
 </html>
