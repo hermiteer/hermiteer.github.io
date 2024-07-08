@@ -12,8 +12,14 @@
                 document.getElementById("url").innerHTML = url
                 window.location.assign(url)
 
-                //
-                var copyButton = document.getElementById("copy-button")
+                // copy authorization URL
+                var copyCodeButton = document.getElementById("copy-url-button")
+                copyButton.addEventListener('click', function() {
+                    window.navigator.clipboard.writeText(url)
+                });
+
+                // copy authorization code
+                var copyCodeButton = document.getElementById("copy-code-button")
                 copyButton.addEventListener('click', function() {
                     window.navigator.clipboard.writeText(code)
                 });
@@ -23,11 +29,11 @@
     <body>
         <center>
             <br>
-            Redirecting back to app...<br>
+            Redirecting back to RMBLMNK2://oauth-callback...<br>
             <br>
-            <span id="url"></span><br>
+            <input type="button" value="Copy authorization URL" id="copy-url-button"><br>
             <br>
-            <input type="button" value="Copy authorization code" id="copy-button">
+            <input type="button" value="Copy authorization code" id="copy-code-button">
         </center>
     </body>
 </html>
