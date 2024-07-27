@@ -13,14 +13,14 @@
                 window.location.assign(url)
 
                 // copy authorization URL
-                var copyCodeButton = document.getElementById("copy-url-button")
-                copyButton.addEventListener('click', function() {
+                var copyURLButton = document.getElementById("copy-url-button")
+                copyURLButton.addEventListener('click', function() {
                     window.navigator.clipboard.writeText(url)
                 });
 
                 // copy authorization code
                 var copyCodeButton = document.getElementById("copy-code-button")
-                copyButton.addEventListener('click', function() {
+                copyCodeButton.addEventListener('click', function() {
                     window.navigator.clipboard.writeText(code)
                 });
             });
