@@ -5,7 +5,7 @@
 
                 // assemble params into url, then redirect
                 const params = new URLSearchParams(window.location.search)
-                var code = params.get("code")
+                const code = params.get("code")
                 const scope = params.get("scope")
                 const state = params.get("state")
                 // const url = "RMBLMNK2://oauth-callback?code=" + code + "&scope=" + scope + "&state=" + state
@@ -16,9 +16,9 @@
                 // if (!url) {
                 //     url = "no challenge URL";
                 // }
-                if (!code) {
-                    code = "no challenge code";
-                }
+                // if (!code) {
+                //     code = "no challenge code";
+                // }
 
                 // copy authorization URL
                 // var copyURLButton = document.getElementById("copy-url-button")
