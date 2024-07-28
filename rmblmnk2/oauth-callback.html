@@ -13,10 +13,10 @@
                 window.location.assign(url)
 
                 // assign default values
-                if (url === null) {
+                if (!url) {
                     url = "no challenge URL";
                 }
-                if (code === null) {
+                if (!code) {
                     code = "no challenge code";
                 }
 
