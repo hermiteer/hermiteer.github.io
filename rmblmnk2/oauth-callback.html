@@ -29,7 +29,11 @@
                 // copy authorization code
                 var copyCodeButton = document.getElementById("copy-code-button")
                 copyCodeButton.addEventListener('click', function() {
-                    window.navigator.clipboard.writeText(code)
+                    if (!code) {
+                        window.alert("There is no authorization code to copy");
+                    } else {
+                        window.navigator.clipboard.writeText(code);
+                    }
                 });
             });
         </script>
