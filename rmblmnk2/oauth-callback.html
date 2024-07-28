@@ -8,23 +8,11 @@
                 const code = params.get("code")
                 const scope = params.get("scope")
                 const state = params.get("state")
+
+                // TODO enable redirect when visionOS Safari supports it
                 // const url = "RMBLMNK2://oauth-callback?code=" + code + "&scope=" + scope + "&state=" + state
                 // document.getElementById("url").innerHTML = url
                 // window.location.assign(url)
-
-                // assign default values
-                // if (!url) {
-                //     url = "no challenge URL";
-                // }
-                // if (!code) {
-                //     code = "no challenge code";
-                // }
-
-                // copy authorization URL
-                // var copyURLButton = document.getElementById("copy-url-button")
-                // copyURLButton.addEventListener('click', function() {
-                //     window.navigator.clipboard.writeText(url)
-                // });
 
                 // copy authorization code
                 var copyCodeButton = document.getElementById("copy-code-button")
@@ -44,12 +32,6 @@
             <h2>
                 Redirecting back to RMBLMNK2://oauth-callback...<br>
             </h2>
-            <br>
-            <h2>
-                <span id="code"></span>
-            </h2>
-<!--             <br>
-            <input type="button" value="Copy authorization URL" id="copy-url-button"><br> -->
             <br>
             <input type="button" value="Copy authorization code" id="copy-code-button">
         </center>
